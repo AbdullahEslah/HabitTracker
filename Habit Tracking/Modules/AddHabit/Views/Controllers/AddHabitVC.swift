@@ -16,10 +16,11 @@ class AddHabitVC: UIViewController {
     @IBOutlet weak var habitNameTextField: UITextField!
     @IBOutlet weak var menuButton: UIButton!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     
+        //  to allow dismiss keyboard when return key tapped
+        habitNameTextField.delegate = self
         checkWhetherDataAddedOrNot()
     }
 
@@ -41,7 +42,12 @@ class AddHabitVC: UIViewController {
         
         Helper().createGradientView(on: self.view, specificViewHolder: self.view)
         
-        
+    }
+    
+    //  dismiss keyboard when tapping outside the keyboard
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
     }
     
     func checkWhetherDataAddedOrNot(){
@@ -67,7 +73,6 @@ class AddHabitVC: UIViewController {
                     self.dismiss(animated: true)
                 }
                 
-                
             case.Failure(let error):
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                     self.view.activityStopAnimating()
@@ -88,14 +93,22 @@ class AddHabitVC: UIViewController {
     
     @IBAction func addHabitButtonClicked(_ sender: Any) {
         
-        //  validation for habit input
-        if habitNameTextField.text?.isEmpty == true || habitNameTextField.text == nil {
+        guard let theHabitTextField = habitNameTextField.text, !theHabitTextField.isEmpty,!theHabitTextField.trimmingCharacters(in: .whitespaces).isEmpty
+        else{
             Helper.showAlert(title: "Empty Field !", message: "Please Type Your Habit..", in: self)
             return
         }
+        
         //  then add to firestore
-        addHabitViewModel.addHabit(habitName: habitNameTextField?.text ?? "", habitStatus: menuButton.menu?.selectedElements.first?.title ?? "")
+        addHabitViewModel.addHabit(habitName: theHabitTextField, habitStatus: menuButton.menu?.selectedElements.first?.title ?? "")
     }
     
 }
 
+//  conform to protocol to hide keyboard when tapped on return key
+extension AddHabitVC :UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+}
