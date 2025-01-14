@@ -1,5 +1,7 @@
 # HabitTracker
-Habit Tracker App Which You Can Add Daily Habits And Track Them Whenever You Open The App
+Habit Tracker App Which You Can Add Daily Habits And Track Them Whenever You Open The App 
+this projects made using MVVM + FirebaseFirestore in realtime
+
 
 
 
@@ -10,4 +12,9 @@ Habit Tracker App Which You Can Add Daily Habits And Track Them Whenever You Ope
 
 
 3=>And also can fetch all added habits and see the status and habit there
+
+
+
+
+
 
