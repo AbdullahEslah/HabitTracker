@@ -11,6 +11,7 @@ class HomeVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var addHabitButton: UIButton!
+    
     let placeHolderEmptyLabel = UILabel()
 
     private lazy var homeViewModel = HomeViewModel()
