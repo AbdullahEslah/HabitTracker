@@ -26,8 +26,8 @@ This project is built using MVVM + Firebase Firestore (Realtime) + CoreData (Off
 ### 1. Project Structure
 
 <p align="center">
-  <img src="Habit%20Tracking/screenshots/project_structure.png" alt="Project Structure" width="250"/>
-  <img src="Habit%20Tracking/screenshots/splash_screen.png" alt="Splash Screen" width="250"/>
+  <img src="screenshots/project_structure.png" alt="Project Structure" width="250"/>
+  <img src="screenshots/splash_screen.png" alt="Splash Screen" width="250"/>
 </p>
 
 ---
@@ -36,8 +36,8 @@ This project is built using MVVM + Firebase Firestore (Realtime) + CoreData (Off
 login screen & register screen
 
 <p align="center">
-  <img src="Habit%20Tracking/screenshots/login.png" alt="Login Screen" width="250"/>
-  <img src="Habit%20Tracking/screenshots/register.png" alt="Register Screen" width="250"/>
+  <img src="screenshots/login.png" alt="Login Screen" width="250"/>
+  <img src="screenshots/register.png" alt="Register Screen" width="250"/>
 </p>
 
 ---
@@ -46,10 +46,10 @@ login screen & register screen
 home multi screen states online/offline
 
 <p align="center">
-  <img src="Habit%20Tracking/screenshots/home1.png" alt="Home1" width="250"/>
-  <img src="Habit%20Tracking/screenshots/home_online.png" alt="Home Online" width="250"/>
-  <img src="Habit%20Tracking/screenshots/home_offline.png" alt="Home Offline" width="250"/>
-  <img src="Habit%20Tracking/screenshots/delete_task.png" alt="Delete Task" width="250"/>
+  <img src="screenshots/home1.png" alt="Home1" width="250"/>
+  <img src="screenshots/home_online.png" alt="Home Online" width="250"/>
+  <img src="screenshots/home_offline.png" alt="Home Offline" width="250"/>
+  <img src="screenshots/delete_task.png" alt="Delete Task" width="250"/>
 </p>
 
 ---
@@ -58,8 +58,8 @@ home multi screen states online/offline
 add task screens
 
 <p align="center">
-  <img src="Habit%20Tracking/screenshots/add_task1.png" alt="Add Task1" width="250"/>
-  <img src="Habit%20Tracking/screenshots/add_task2.png" alt="Add Task2" width="250"/>
+  <img src="screenshots/add_task1.png" alt="Add Task1" width="250"/>
+  <img src="screenshots/add_task2.png" alt="Add Task2" width="250"/>
 </p>
 
 ---
