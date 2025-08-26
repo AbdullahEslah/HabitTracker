@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JQ0-eM-agl">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HomeVC-->
+        <scene sceneID="YxH-h8-TtJ">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" id="JQ0-eM-agl" customClass="HomeVC" customModule="Smart_Tracking_Tasks" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cjY-df-I0c">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uh8-q1-E3v">
+                                <rect key="frame" x="16" y="261" width="288" height="66.5"/>
+                                <string key="text">No Habits Added.
+Start adding now to be appeared here</string>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hbd-EQ-Frw">
+                                <rect key="frame" x="16" y="116.5" width="288" height="451.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LI5-Qn-okZ">
+                                <rect key="frame" x="264" y="468" width="40" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="LI5-Qn-okZ" secondAttribute="height" multiplier="1:1" id="8Ej-2n-7AS"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <buttonConfiguration key="configuration" style="filled" image="plus" catalog="system" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" name="MainColor"/>
+                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" name="MainColor"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Habits" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oto-Yw-Dtc">
+                                <rect key="frame" x="16" y="52" width="288" height="36.5"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PJE-Ai-GI5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uh8-q1-E3v" firstAttribute="centerX" secondItem="PJE-Ai-GI5" secondAttribute="centerX" id="3JM-4m-LmO"/>
+                            <constraint firstItem="Oto-Yw-Dtc" firstAttribute="top" secondItem="PJE-Ai-GI5" secondAttribute="top" constant="32" id="6fO-kJ-WfW"/>
+                            <constraint firstItem="uh8-q1-E3v" firstAttribute="centerY" secondItem="PJE-Ai-GI5" secondAttribute="centerY" id="8sP-nf-XsD"/>
+                            <constraint firstItem="hbd-EQ-Frw" firstAttribute="trailing" secondItem="Oto-Yw-Dtc" secondAttribute="trailing" id="BPm-3s-2Da"/>
+                            <constraint firstItem="PJE-Ai-GI5" firstAttribute="trailing" secondItem="uh8-q1-E3v" secondAttribute="trailing" constant="16" id="IX2-w9-Y9t"/>
+                            <constraint firstItem="uh8-q1-E3v" firstAttribute="leading" secondItem="PJE-Ai-GI5" secondAttribute="leading" constant="16" id="MBz-f2-S0R"/>
+                            <constraint firstItem="LI5-Qn-okZ" firstAttribute="height" secondItem="cjY-df-I0c" secondAttribute="height" multiplier="0.07" id="Rbp-H2-Qyy"/>
+                            <constraint firstItem="Oto-Yw-Dtc" firstAttribute="leading" secondItem="PJE-Ai-GI5" secondAttribute="leading" constant="16" id="TaO-RD-Fz5"/>
+                            <constraint firstAttribute="bottom" secondItem="hbd-EQ-Frw" secondAttribute="bottom" id="ZJE-1s-WkI"/>
+                            <constraint firstItem="PJE-Ai-GI5" firstAttribute="bottom" secondItem="LI5-Qn-okZ" secondAttribute="bottom" constant="60" id="e1W-Kw-McL"/>
+                            <constraint firstItem="PJE-Ai-GI5" firstAttribute="trailing" secondItem="Oto-Yw-Dtc" secondAttribute="trailing" constant="16" id="fd1-Ox-2n2"/>
+                            <constraint firstItem="hbd-EQ-Frw" firstAttribute="leading" secondItem="Oto-Yw-Dtc" secondAttribute="leading" id="mc8-Qj-iIk"/>
+                            <constraint firstItem="PJE-Ai-GI5" firstAttribute="trailing" secondItem="LI5-Qn-okZ" secondAttribute="trailing" constant="16" id="riB-is-mXA"/>
+                            <constraint firstItem="hbd-EQ-Frw" firstAttribute="top" secondItem="Oto-Yw-Dtc" secondAttribute="bottom" constant="28" id="yUi-3L-rbG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addHabitButton" destination="LI5-Qn-okZ" id="vFA-cS-pTw"/>
+                        <outlet property="noHabitsLabel" destination="uh8-q1-E3v" id="MeD-MB-8NP"/>
+                        <outlet property="tableView" destination="hbd-EQ-Frw" id="ZHx-j5-3yp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8uh-CW-ApQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="331.875" y="-221.83098591549296"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <namedColor name="MainColor">
+            <color red="0.97254901960784312" green="0.84705882352941175" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
