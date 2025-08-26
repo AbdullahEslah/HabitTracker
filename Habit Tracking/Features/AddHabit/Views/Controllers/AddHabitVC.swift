@@ -109,9 +109,8 @@ class AddHabitVC: UIViewController {
                 let msg = message as! String
                 self.view.activityStopAnimating()
                 
-                // Show Snackbar مع completion
+                // Show Snackbar
                 self.view.showSnackbar(message: msg, duration: 2.5) {
-                    // ✅ dismiss بعد ما Snackbar يختفي
                     self.dismiss(animated: true)
                 }
 
@@ -132,7 +131,6 @@ class AddHabitVC: UIViewController {
                     message: "Task Added Successfully And Saved Offline",
                     duration: 3
                 ) {
-                    // ✅ بعد ما السناك بار يخلص يتعمل dismiss
                     self.dismiss(animated: true)
                 }
             }
